@@ -1,0 +1,11 @@
+:root{
+  --color-primary: #6aff99;
+  --color-secondary: #1e1e1e;
+  --color-light: #ffffff;
+  --color-dark: #000000;
+}
+
+.container_login{
+  color: var(--color-primary);
+  background-color: var(--color-dark);
+}
