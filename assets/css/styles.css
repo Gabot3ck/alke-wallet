@@ -7,18 +7,26 @@
   --color-dark: #000000;
   --color-txtForm: #627597;
   --color-txt-dark: #5e5e5e;
+  --color-alert: #bf1f23;
+  --color-success: #9dda34;
 }
-
 body{
   background-color: var(--color-dark);
 }
+p, ul{
+  margin: 0;
+}
+li{
+  list-style: none;
+}
 
+/*** LOGIN ****/
 .wrapper__btn__login{
   width: 100%;
   height: 60px;
 }
 #loginForm{
-  font-family: var(--text-consola);
+  font-family: sans-serif;
 }
 #loginForm label{
   margin-top: 25px;
@@ -97,3 +105,79 @@ body{
   text-decoration: underline;
   transition: all .3s ease-in-out;
 }
+/***  END  LOGIN  ****/
+
+/***  MENU  ****/
+.wrapper_menu{
+  padding-top: 30px;
+  color: var(--color-light);
+}
+.header__menu {
+  height: 60px;
+  color: var(--color-light);
+}
+.bi-person-circle{
+  font-size: 4rem;
+}
+.bi-bell{
+  font-size: 1.5rem;
+}
+.wrapper__balance{
+  color: var(--color-light);
+}
+.credit__card{
+  border-radius: 30px;
+  height: 270px;
+  background-color: var(--color-txt-dark);
+}
+.bi-sim-fill{
+  transform: rotate(-90deg);
+}
+.bi-wifi-2{
+  transform: rotate(90deg);
+}
+.wrapper__nav__link{
+  border-radius: 10px;
+  width: 90px;
+  height: 90px;
+  background-color: var(--color-txt-dark);
+}
+.wrapper__nav a{
+  color: var(--color-light);
+  text-decoration: none;
+  transition: all ease-in .3s;
+}
+.wrapper__nav a:hover {
+  color: var(--color-primary);
+}
+.fa-wallet, .bi-send-fill, .fa-hand-holding-usd, .fa-history{
+  margin-bottom: 5px;
+  font-size: 1.3rem;
+}
+.fa-lightbulb, .bi-paypal, .bi-bag-dash{
+  font-size: 2.2rem;
+}
+.transaction_card{
+  margin: 15px auto;
+  border-radius: 15px;
+  height: 120px;
+}
+.transaction_card_title{
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+.transaction_card_date{
+  font-size: .9rem;
+}
+.transaction_card_value{
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+.transaction_payment{
+  color: var(--color-alert);
+}
+.transaction_receipt{
+  color: var(--color-success);
+}
+
+/***  END  LOGIN  ****/
