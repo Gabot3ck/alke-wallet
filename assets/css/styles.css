@@ -107,8 +107,9 @@ li{
 }
 /***  END  LOGIN  ****/
 
+
 /***  MENU  ****/
-.wrapper_menu{
+.wrapper__menu{
   padding-top: 30px;
   color: var(--color-light);
 }
@@ -179,5 +180,15 @@ li{
 .transaction_receipt{
   color: var(--color-success);
 }
+/***  END  MENU  ****/
 
-/***  END  LOGIN  ****/
+
+/***  DEPOSIT  ****/
+.wrapper__deposit{
+  padding-top: 30px;
+  color: var(--color-light);
+}
+.bi-arrow-left-circle{
+  font-size: 2.2rem;
+}
+/***  END  DEPOSIT  ****/
