@@ -112,13 +112,13 @@ li{
 .body__menu{
   background: rgb(22,24,36);
   background: linear-gradient(
-                45deg,
-                rgba(43,69,68,1) 2%, 
-                rgba(22,24,36,1) 15%, 
-                rgba(0,0,0,1) 47%, 
-                rgba(22,24,36,1) 67%,
-                rgba(43,69,68,1) 93%
-              );
+    45deg,
+    rgba(43,69,68,1) 2%, 
+    rgba(22,24,36,1) 15%, 
+    rgba(0,0,0,1) 47%, 
+    rgba(22,24,36,1) 67%,
+    rgba(43,69,68,1) 93%
+  );
 }
 .wrapper__menu{
   padding-top: 30px;
@@ -131,14 +131,6 @@ li{
 .bi-person-circle{
   font-size: 4rem;
 }
-.bi-bell{
-  font-size: 1.5rem;
-}
-.bi-bell:hover{
-  color: var(--color-primary-hover);
-  cursor: pointer;
-  transition: all .3s ease-in;
-}
 .wrapper__balance{
   color: var(--color-light);
 }
@@ -149,12 +141,6 @@ li{
   background-color: rgba(255, 255, 255, 0.37);
   backdrop-filter: blur(5px) saturate(180%);
   -webkit-backdrop-filter: blur(5px) saturate(170%);
-}
-.bi-sim-fill{
-  transform: rotate(-90deg);
-}
-.bi-wifi-2{
-  transform: rotate(90deg);
 }
 .wrapper__nav__link{
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -171,13 +157,6 @@ li{
 }
 .wrapper__nav a:hover {
   color: var(--color-primary-hover);
-}
-.fa-wallet, .bi-send-fill, .fa-hand-holding-usd, .fa-history{
-  margin-bottom: 5px;
-  font-size: 1.3rem;
-}
-.fa-lightbulb, .bi-paypal, .bi-bag-dash{
-  font-size: 2.2rem;
 }
 .transaction_card{
   margin: 25px auto;
@@ -198,12 +177,37 @@ li{
   font-size: 1.1rem;
   font-weight: 500;
 }
+ /***  Styles of menu  ****/
 .transaction_payment{
   color: var(--color-alert);
 }
 .transaction_receipt{
   color: var(--color-success);
 }
+  /*** End  Styles of menu  ****/
+  /***  Icons of menu  ****/
+.bi-bell{
+  font-size: 1.5rem;
+}
+.bi-bell:hover{
+  color: var(--color-primary-hover);
+  cursor: pointer;
+  transition: all .3s ease-in;
+}
+.bi-sim-fill{
+  transform: rotate(-90deg);
+}
+.bi-wifi-2{
+  transform: rotate(90deg);
+}
+.fa-wallet, .bi-send-fill, .fa-hand-holding-usd, .fa-history{
+  margin-bottom: 5px;
+  font-size: 1.3rem;
+}
+.fa-lightbulb, .bi-paypal, .bi-bag-dash{
+  font-size: 2.2rem;
+}
+ /*** End  Icons of menu  ****/
 /***  END  MENU  ****/
 
 
@@ -212,7 +216,9 @@ li{
   padding-top: 30px;
   color: var(--color-light);
 }
+ /*** Icons of deposit ****/
 .bi-arrow-left-circle{
   font-size: 2.2rem;
 }
+ /*** End  Icons of deposit  ****/
 /***  END  DEPOSIT  ****/
