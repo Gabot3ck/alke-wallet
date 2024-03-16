@@ -9,34 +9,59 @@
     rel="stylesheet"     
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
     crossorigin="anonymous">
+  <!-- Bootstrap Icons v1 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <!-- Stylesheet -->
   <link rel="stylesheet" href="../assets/css/styles.css">
   <title>Alke Wallet - Depósito de dinero</title>
 </head>
-<body>
+<body class="body__wrapper__deposit p-2 p-sm-0" >
   
   <div class="wrapper__deposit container-xxl d-flex flex-column justify-content-start align-items-center min-vh-100 w-100" >
-    <nav class="col-8 mx-auto" >
-      <i class="bi bi-arrow-left-circle"></i>
-    </nav>
-    <main>
-      <p class="h3" >¿Cuánto dinero quieres depositar?</p>
-      <p class="h5" >Ingresa la cantidad de dinero para hacer la carga a tu billetera digital.</p>
-      <div class="d-flex justify-content-start align-items-center gap-1" >
-        <p>Tiene disponible</p> <span class="fw-bold" >$ 2.200.000</span>
+    
+    <!-- NAVBAR SECTION -->
+    <nav class="col-12 col-md-8 col-lg-6 mx-auto d-flex justify-content-between align-items-center mb-3" >
+      <div class="d-flex justify-content-start align-items-center gap-5" >
+        <a href="./menu.html">
+          <i class="bi bi-arrow-left-circle"></i>
+        </a>
+        <a href="./menu.html">
+          <img src="../assets/images/alke-dark.svg" alt="Logo Alke Wallet" width="50" >
+        </a>
       </div>
-      <div>
-        <form action="">
+      <a href="./menu.html">
+        <i class="bi bi-x-square"></i>
+      </a>
+    </nav>
+    <!-- END   NAVBAR SECTION -->
+
+    <!-- MAIN SECTION -->
+    <main>
+      <!-- TITLE AND DESCRIPTION -->
+      <p class="h3 text-center" >¿Cuánto dinero quieres depositar?</p>
+      <p class="h5 my-4 px-4 col-12 col-sm-10 mx-auto text-center" >Ingresa la cantidad de dinero para hacer la carga a tu billetera digital.</p>
+      <!-- END   TITLE AND DESCRIPTION -->
+
+      <!-- CONTAINER OF FORM OF DEPOSIT-->
+      <section class="wrapper__form__deposit bg-dark col-12 col-sm-10 mx-auto" >
+        <!-- CURRENT BALANCE -->
+        <div class="d-flex justify-content-start align-items-center gap-1 border-bottom p-3 p-sm-4" >
+          <p>Tiene disponible</p> <span class="deposit__current__value fw-bold " >$ 2.200.000</span>
+        </div>
+        <!-- END   CURRENT BALANCE -->
+
+        <!-- FORM OF DEPOSIT -->
+        <form action="" class="w-100 p-3 p-sm-4">
           <div>
-            <label for="">Monto del depósito</label>
-            <div class="input-group mb-3">
+            <label for="valueOfDeposit">Monto del depósito</label>
+            <div class="input-group mb-3 mt-2">
               <span class="input-group-text">$</span>
-              <input type="text" class="form-control" placeholder="0" aria-label="Amount (to the nearest dollar)">
+              <input id="valueOfDeposit" type="text" class="form-control" placeholder="0" autocomplete="off">
               <span class="input-group-text">CLP</span>
             </div>
           </div>
 
-          <div>
+          <div class="my-4 d-flex flex-column justify-content-between align-items-between gap-3" >
             <div class=" w-full d-flex justify-content-between align-items-center" >
               <p>Cantidad a transferir</p>
               <p>$ <span>250000</span> CLP</p>
@@ -62,13 +87,17 @@
               <p>77.000.777-0</p>
             </div>
           </div>
-          <input type="button" value="Adjuntar comprobante" >          
+          
+          <button class="btn__main w-100">Adjuntar comprobante</button> 
+          
         </form>
-      </div>
+        <!-- END   FORM OF DEPOSIT -->
+      </section>
+      <!-- END   CONTAINER OF FORM -->
       
     </main>
+    <!-- END   MAIN SECTION -->
   </div>
-
 
 
     <!-- Bootstrap v5 -->

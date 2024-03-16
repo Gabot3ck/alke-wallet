@@ -20,6 +20,18 @@ li{
   list-style: none;
 }
 
+.bg__gradient{
+  background: var(--color-dark);
+  background: linear-gradient(
+    45deg,
+    rgba(43,69,68,1) 2%, 
+    rgba(22,24,36,1) 15%, 
+    rgba(0,0,0,1) 47%, 
+    rgba(22,24,36,1) 67%,
+    rgba(43,69,68,1) 93%
+  );
+}
+
 /*** LOGIN ****/
 .wrapper__btn__login{
   width: 100%;
@@ -109,17 +121,6 @@ li{
 
 
 /***  MENU  ****/
-.body__menu{
-  background: rgb(22,24,36);
-  background: linear-gradient(
-    45deg,
-    rgba(43,69,68,1) 2%, 
-    rgba(22,24,36,1) 15%, 
-    rgba(0,0,0,1) 47%, 
-    rgba(22,24,36,1) 67%,
-    rgba(43,69,68,1) 93%
-  );
-}
 .wrapper__menu{
   padding-top: 30px;
   color: var(--color-light);
@@ -212,13 +213,70 @@ li{
 
 
 /***  DEPOSIT  ****/
+.body__wrapper__deposit{
+  background: var(--color-dark);
+  background: linear-gradient(
+    23deg, 
+    rgba(43,69,68,1) 5%, 
+    rgba(22,24,36,1) 30%, 
+    rgba(0,0,0,1) 80%); 
+
+}
 .wrapper__deposit{
-  padding-top: 30px;
+  padding: 20px 0; 
   color: var(--color-light);
 }
+.wrapper__form__deposit{
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 15px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+}
+.deposit__current__value{
+  color: var(--color-primary-hover);
+}
+.form-control{
+  color: var(--color-light);
+  background-color: transparent;
+}
+.form-control:focus{
+  border: 1px solid var(--color-primary);
+  color: var(--color-light);
+  background-color: transparent;
+}
+.input-group-text{
+  font-size: 1.2rem;
+  color: var(--color-primary-hover);
+  background-color: transparent;
+}
+.btn__main{
+  padding: 14px;
+  border: 1px solid var(--color-primary);
+  border-radius: 5px;
+  height: 60px;
+  color: var(--color-primary);
+  font-size: .9rem;
+  font-weight: 600;
+  font-family: var(--text-login);
+  background-color: transparent;
+  transition: all .3s ease-in-out;
+}
+.btn__main:hover{
+  padding: 12px 22px;
+  border: 1px solid var(--color-primary-hover);
+  color: var(--color-dark);
+  font-weight: 600;
+  background-color: var(--color-primary-hover);
+}
  /*** Icons of deposit ****/
-.bi-arrow-left-circle{
+.bi-arrow-left-circle, .bi-x-square{
   font-size: 2.2rem;
+  color: var(--color-light);
+}
+.bi-arrow-left-circle:hover,
+.bi-x-square:hover{
+  color: var(--color-primary-hover);
+  transition: all .3s ease-in;
 }
  /*** End  Icons of deposit  ****/
 /***  END  DEPOSIT  ****/
