@@ -109,6 +109,17 @@ li{
 
 
 /***  MENU  ****/
+.body__menu{
+  background: rgb(22,24,36);
+  background: linear-gradient(
+                45deg,
+                rgba(43,69,68,1) 2%, 
+                rgba(22,24,36,1) 15%, 
+                rgba(0,0,0,1) 47%, 
+                rgba(22,24,36,1) 67%,
+                rgba(43,69,68,1) 93%
+              );
+}
 .wrapper__menu{
   padding-top: 30px;
   color: var(--color-light);
@@ -123,13 +134,21 @@ li{
 .bi-bell{
   font-size: 1.5rem;
 }
+.bi-bell:hover{
+  color: var(--color-primary-hover);
+  cursor: pointer;
+  transition: all .3s ease-in;
+}
 .wrapper__balance{
   color: var(--color-light);
 }
 .credit__card{
+  border: 1px solid rgba(209, 213, 219, 0.3);
   border-radius: 30px;
   height: 270px;
-  background-color: var(--color-txt-dark);
+  background-color: rgba(255, 255, 255, 0.37);
+  backdrop-filter: blur(5px) saturate(180%);
+  -webkit-backdrop-filter: blur(5px) saturate(170%);
 }
 .bi-sim-fill{
   transform: rotate(-90deg);
@@ -138,10 +157,12 @@ li{
   transform: rotate(90deg);
 }
 .wrapper__nav__link{
+  border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 10px;
   width: 90px;
   height: 90px;
-  background-color: var(--color-txt-dark);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
 }
 .wrapper__nav a{
   color: var(--color-light);
@@ -149,7 +170,7 @@ li{
   transition: all ease-in .3s;
 }
 .wrapper__nav a:hover {
-  color: var(--color-primary);
+  color: var(--color-primary-hover);
 }
 .fa-wallet, .bi-send-fill, .fa-hand-holding-usd, .fa-history{
   margin-bottom: 5px;
@@ -159,9 +180,12 @@ li{
   font-size: 2.2rem;
 }
 .transaction_card{
-  margin: 15px auto;
+  margin: 25px auto;
+  border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 15px;
   height: 120px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
 }
 .transaction_card_title{
   font-size: 1.1rem;
