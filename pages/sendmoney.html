@@ -8,8 +8,7 @@
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
     rel="stylesheet"     
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
-    crossorigin="anonymous"
-  >
+    crossorigin="anonymous">
   <!-- Bootstrap Icons v1 -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <!-- Font Awesome Icons v5 -->
@@ -23,58 +22,86 @@
   <link rel="stylesheet" href="../assets/css/styles.css">
   <title>Alke Wallet - Envío de dinero</title>
 </head>
-<body>
+<body class="body__wrapper__deposit p-2 p-sm-0" >
   
   <div class="wrapper__deposit container-xxl d-flex flex-column justify-content-start align-items-center min-vh-100 w-100" >
-    <nav class="col-8 mx-auto" >
-      <i class="bi bi-arrow-left-circle"></i>
-    </nav>
-    <main>
-      <p class="h3" >¿Cuánto dinero desea transferir?</p>
-      <div class="d-flex justify-content-start align-items-center gap-1" >
-        <p>Tiene disponible</p> <span class="fw-bold" >$ 2.200.000</span>
+    
+    <!-- NAVBAR SECTION -->
+    <nav class="col-12 col-md-8 col-lg-6 mx-auto d-flex justify-content-between align-items-center mb-3" >
+      <div class="d-flex justify-content-start align-items-center gap-5" >
+        <a href="./menu.html">
+          <i class="bi bi-arrow-left-circle"></i>
+        </a>
+        <a href="./menu.html">
+          <img src="../assets/images/alke-dark.svg" alt="Logo Alke Wallet" width="50" >
+        </a>
       </div>
-      <div>
-        <form action="">
+      <a href="./menu.html">
+        <i class="bi bi-x-square"></i>
+      </a>
+    </nav>
+    <!-- END   NAVBAR SECTION -->
+
+    <!-- MAIN SECTION -->
+    <main>
+      <!-- TITLE AND DESCRIPTION -->
+      <p class="h3 text-center" >¿Cuánto dinero desea transferir?</p>
+      <p class="h5 my-4 px-4 col-12 col-sm-10 mx-auto text-center" >Ingresa la cantidad de dinero para hacer la transferencia a su contacto.</p>
+      <!-- END   TITLE AND DESCRIPTION -->
+
+      <!-- CONTAINER OF FORM OF DEPOSIT-->
+      <section class="wrapper__form__deposit bg-dark col-12 col-sm-10 mx-auto" >
+        <!-- CURRENT BALANCE -->
+        <div class="d-flex justify-content-start align-items-center gap-1 border-bottom p-3 p-sm-4" >
+          <p>Tiene disponible</p> <span class="deposit__current__value fw-bold " >$ 2.200.000</span>
+        </div>
+        <!-- END   CURRENT BALANCE -->
+
+        <!-- FORM OF TRANSFERENCE -->
+        <form action="" class="w-100 p-3 p-sm-4 d-flex flex-column">
+          <button class="btn__add col-12 col-md-5 px-3 py-2 rounded align-self-end d-flex justify-content-center justify-content-md-around align-items-center" >
+            <i class="bi bi-plus-circle-fill me-3 me-md-0"></i> 
+            Agregar contacto
+          </button>
+
+          <select class="form-select my-4 py-3">
+            <option selected>Seleccionar Contacto</option>
+            <option value="1">Contacto 1</option>
+            <option value="2">Contacto 2</option>
+            <option value="3">Contacto 3</option>
+          </select>
+
           <div>
             <label for="">Monto del envío</label>
-            <div class="input-group mb-3">
+            <div class="input-group mb-3 mt-2">
               <span class="input-group-text">$</span>
-              <input type="text" class="form-control" placeholder="0" aria-label="Amount (to the nearest dollar)">
+              <input type="text" class="form-control" placeholder="0" autocomplete="off"">
               <span class="input-group-text">CLP</span>
             </div>
           </div>
           <div>
             <label for="">Costo del envío</label>
-            <div class="input-group mb-3">
+            <div class="input-group mb-3 mt-2">
               <span class="input-group-text">$</span>
-              <input type="text" class="form-control" placeholder="0" aria-label="Amount (to the nearest dollar)" readonly>
+              <input type="text" class="form-control" placeholder="0" readonly>
               <span class="input-group-text">CLP</span>
             </div>
           </div>
           <div>
             <label for="">Destinatario recibe</label>
-            <div class="input-group mb-3">
+            <div class="input-group mb-3 mt-2">
               <span class="input-group-text">$</span>
-              <input type="text" class="form-control" placeholder="0" aria-label="Amount (to the nearest dollar)" readonly>
+              <input type="text" class="form-control" placeholder="0" readonly>
               <span class="input-group-text">CLP</span>
             </div>
           </div>
-          <div class="d-flex justify-content-between align-items-center" >
-            <select class="form-select" aria-label="Default select example">
-              <option selected>Seleccionar Contacto</option>
-              <option value="1">Contacto 1</option>
-              <option value="2">Contacto 2</option>
-              <option value="3">Contacto 3</option>
-            </select>
-            <button>Agregar contacto</button>
-          </div>
-          
-          <input type="button" value="Enviar" >          
+          <input class="btn__main w-100 mt-3" type="button" value="Transferir" >         
         </form>
-      </div>
-      
+        <!-- END  FORM OF TRANSFERENCE -->
+      </section>
+      <!-- END  CONTAINER OF FORM -->
     </main>
+    <!-- END   MAIN SECTION -->
   </div>
 
 
