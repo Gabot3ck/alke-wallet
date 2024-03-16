@@ -302,3 +302,18 @@ li{
   background-color: transparent;
   transition: all .3s ease-in-out;
 }
+.card__transactions{
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  width: 200px;
+  height: 80px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+}
+.bi-box-arrow-in-down{
+  font-size: 2rem;
+  color: var(--color-primary);
+}
+.bi-box-arrow-up{
+  font-size: 2rem;
+  color: var(--color-alert);
+}
