@@ -1,5 +1,7 @@
+/* VARIABLES */
 :root{
   --color-primary: #6aff99;
+  --color-primary-light: #16963f;
   --color-primary-hover: #43eb78;
   --color-primary-focus: rgba(106, 255, 153,.25);
   --color-secondary: #1e1e1e;
@@ -10,6 +12,7 @@
   --color-alert: #bf1f23;
   --color-success: #9dda34;
 }
+/* END  VARIABLES */
 body{
   background-color: var(--color-dark);
 }
@@ -20,6 +23,15 @@ li{
   list-style: none;
 }
 
+/*** DYNAMIC STYLES FOR THE APP ****/
+.errorMessage{
+  color: var(--color-alert);
+  font-size: 1rem;
+}
+.form-control-error{
+  border: 1px solid var(--color-alert) !important;
+}
+/*** END DYNAMIC STYLES FOR THE APP ****/
 
 .bg__gradient{
   background: var(--color-dark);
@@ -48,7 +60,7 @@ li{
   font-weight: 500;
   color: var(--color-light);
 }
-#loginForm #btnPass{
+#loginForm #btnToRecoverPass{
   margin: 20px auto 0;
   border: none;
   display: block;
@@ -59,7 +71,7 @@ li{
   text-decoration: underline;
   transition: all .3s ease-in-out;
 }
-#loginForm #btnPass:hover, .wrapper__signup a:hover{
+#loginForm #btnToRecoverPass:hover, .wrapper__signup a:hover{
   color: var(--color-primary-hover)
 }
 #loginForm input{
@@ -288,6 +300,8 @@ li{
 }
  /*** End  Icons of deposit  ****/
 /***  END  DEPOSIT  ****/
+
+/***  TRANSACTIONS  ****/
 .bi-plus-circle-fill{
   font-size: 1.3rem;
 }
@@ -317,3 +331,27 @@ li{
   font-size: 2rem;
   color: var(--color-alert);
 }
+/***  END  TRANSACTIONS  ****/
+
+
+/***  CUSTOM STYLES FOR SWEETALERT   ****/
+div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm {
+  border: 1px solid  var(--color-primary-light);
+  background-color: var(--color-primary-light);
+  
+}
+div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm:focus,
+div:where(.swal2-container) input:where(.swal2-input):focus{
+  box-shadow: 0 4px 8px 0 var(--color-primary-focus); 
+}
+div:where(.swal2-container) button:where(.swal2-styled).swal2-cancel {
+  border-color: var(--color-alert); 
+  background-color: var(--color-alert);
+}
+div:where(.swal2-container) button:where(.swal2-styled).swal2-cancel:focus {
+  box-shadow: 0 4px 8px 0 rgba(167, 75, 75, 0.842); 
+}
+div:where(.swal2-container) input:where(.swal2-input){
+  border: 2px solid  var(--color-primary-light);
+}
+/*** END  CUSTOM STYLES FOR SWEETALERT   ****/
