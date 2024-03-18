@@ -97,7 +97,7 @@ $(document).ready(function() {
     if ( email === userEmail && pass === userPass ) {
       Swal.fire({
         title: "¡Bienvenido!",
-        text: "Mejore sus finanzas con Alket Wallet",
+        text: "Mejore sus finanzas con Alke Wallet",
         icon: "success",
       }).then((result) => {
         if (result.isConfirmed) {

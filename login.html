@@ -11,6 +11,8 @@
     rel="stylesheet"     
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
     crossorigin="anonymous">
+  <!-- Sweetalert v2 -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <!-- Stylesheet -->
   <link rel="stylesheet" href="./assets/css/styles.css">
   <title>Alke Wallet</title>
@@ -32,24 +34,27 @@
       <!-- LOGIN FORM -->
       <form class="mx-auto"  id="loginForm" name="loginForm" action="#" method="post" accept-charset="utf-8">
         <div>
-          <label for="loginEmail" >Email</label>
-          <input id="loginEmail" class="form-control" type="email" name="loginEmail" size="100" placeholder="Ingresar e-mail" required>
+          <label for="inputLoginEmail" class="step-2">Email</label>
+          <input id="inputLoginEmail" class="form-control mb-2 step-1" type="email" name="loginEmail" size="100" placeholder="Ingresar e-mail" required>
+          <span id="emailErrorMessage" class="step-1"></span>
         </div>
         <div class="loginPass" id="loginPass">
-          <label for="loginPassword" >Contraseña</label>
-          <input id="loginPassword" class="form-control" type="password" name="loginPassword" size="100" placeholder="Ingresar contraseña" required>
+          <label for="inputLoginPassword" class="step-2">Contraseña</label>
+          <input id="inputLoginPassword" class="form-control step-1" type="password" name="loginPassword" size="100" placeholder="Ingresar contraseña" required>
+          <span id="passErrorMessage" class="step-1"></span>
         </div>
-        <button type="button" id="btnPass">Olvidé mi contraseña</button>
+        <button type="button" id="btnToRecoverPass" class="step-1">Olvidé mi contraseña</button>
 
         <div class="wrapper__btn__login">
-          <input id="loginBtnSubmit" type="submit" class="btn__login border-0" value="Ingresar"></input>
+          <input id="loginBtnSubmit" type="button" class="btn__login border-0 step-2" value="Ingresar"></input>
         </div>
       </form>
       <!--  END  -  LOGIN FORM -->
 
       <!-- LINK TO REGISTER -->
       <div class="wrapper__signup">
-        <span>¿No tienes una cuenta?</span><a href="registro.html">Regístrate</a>
+        <span class="step-1" >¿No tienes una cuenta?</span>
+        <a href="registro.html" class="step-1">Regístrate</a>
       </div>
       <!-- END  -  LINK TO REGISTER -->
 
@@ -74,6 +79,7 @@
   <!-- jQuery v3 -->
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <!-- Javascript -->
-  <script src="./assets/js/script.js" ></script>
+  <script src="./assets/js/validateLogin.js" ></script>
+  <script src="./assets/js/recoverPass.js" ></script>
 </body>
 </html>
