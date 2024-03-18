@@ -24,5 +24,5 @@ $(document).ready(function() {
     })
     // END PASSWORD RECOVERY //
 
-})
+});
 
