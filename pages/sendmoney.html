@@ -67,18 +67,18 @@
           </select>
 
           <div>
-            <label for="">Monto del envío</label>
+            <label for="inputTransferValue">Monto del envío</label>
             <div class="input-group mb-3 mt-2">
               <span class="input-group-text">$</span>
-              <input type="text" class="form-control" placeholder="0" autocomplete="off"">
+              <input id="inputTransferValue" type="text" class="form-control" placeholder="0" autocomplete="off"">
               <span class="input-group-text">CLP</span>
             </div>
           </div>
           <div>
-            <label for="">Costo del envío</label>
+            <label for="deliveryCost">Costo del envío</label>
             <div class="input-group mb-3 mt-2">
               <span class="input-group-text">$</span>
-              <input type="text" class="form-control" placeholder="0" readonly>
+              <input id="deliveryCost" type="text" class="form-control" placeholder="0" readonly>
               <span class="input-group-text">CLP</span>
             </div>
           </div>
@@ -86,7 +86,7 @@
             <label for="">Destinatario recibe</label>
             <div class="input-group mb-3 mt-2">
               <span class="input-group-text">$</span>
-              <input type="text" class="form-control" placeholder="0" readonly>
+              <input id="totalTransferValue" type="text" class="form-control" placeholder="0" readonly>
               <span class="input-group-text">CLP</span>
             </div>
           </div>
@@ -109,6 +109,6 @@
   <!-- jQuery v3 -->
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <!-- Javascript -->
-  <script src="../assets/js/script.js" ></script>
+  <script src="../assets/js/validateMoneyTransferForm.js" ></script>
 </body>
 </html>

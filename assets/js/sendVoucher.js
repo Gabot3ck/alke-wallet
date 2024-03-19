@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready( function() {
 
   // SEND VOUCHER//
   $("#btnSendVoucher").click( function(e) {
