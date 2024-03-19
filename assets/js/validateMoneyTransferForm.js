@@ -12,6 +12,5 @@ $(document).ready( function(){
       $("#deliveryCost").val("0");
       $("#totalTransferValue").val("0");
     }
-
 });
 } )
